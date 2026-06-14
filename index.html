@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Supermercado la Abundancia Calidad, frescura y los mejores precios en cada pasillo. Visita nuestras sucursales o explora nuestro catálogo en línea." />
+  <meta name="keywords" content="supermercado, mercado, frutas, verduras, carnes, abarrotes, promociones, ofertas, LaAbundancia" />
+  <meta name="author" content="LaAbundancia" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Supermercado la Abundancia | Frescura en cada compra" />
+  <meta property="og:description" content="Calidad, frescura y los mejores precios. Explora nuestro catálogo, promociones y sucursales." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.LaAbundancia.co" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=1200" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Supermercado la Abundancia" />
+  <meta name="twitter:description" content="Calidad, frescura y los mejores precios en cada pasillo." />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.LaAbundancia.co" />
+  <title>Supermercado la Abundancia | Frescura en cada compra</title>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GroceryStore",
+    "name": "LaAbundancia",
+    "description": "Supermercado con productos frescos, abarrotes y promociones diarias.",
+    "url": "https://www.LaAbundancia.co",
+    "telephone": "+57-300-123-4567",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle 18 #25-40",
+      "addressLocality": "Pasto",
+      "addressRegion": "Nariño",
+      "addressCountry": "CO"
+    },
+    "openingHours": "Mo-Su 07:00-22:00",
+    "sameAs": [
+      "https://www.facebook.com/LaAbundancia",
+      "https://www.instagram.com/LaAbundancia"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =============================================
+       DESIGN SYSTEM & TOKENS
+       ============================================= */
+    :root {
+      --c-primary:     #1A7A4A;
+      --c-primary-dk:  #135A36;
+      --c-primary-lt:  #E8F7EF;
+      --c-accent:      #F4A01C;
+      --c-accent-dk:   #C07E0E;
+      --c-accent-lt:   #FEF6E4;
+      --c-red:         #D94040;
+      --c-red-lt:      #FDF0F0;
+      --c-dark:        #181C1A;
+      --c-dark-2:      #2B312E;
+      --c-gray-1:      #F5F6F5;
+      --c-gray-2:      #E8EAE8;
+      --c-gray-3:      #B8BDB9;
+      --c-gray-4:      #6B7270;
+      --c-text:        #1C211E;
+      --c-text-2:      #88874c;
+      --c-white:       #FFFFFF;
+      --font-display:  'Fraunces', Georgia, serif;
+      --font-body:     'Plus Jakarta Sans', system-ui, sans-serif;
+      --radius-sm:     6px;
+      --radius-md:     12px;
+      --radius-lg:     20px;
+      --radius-xl:     32px;
+      --shadow-sm:     0 1px 4px rgba(0,0,0,.07);
+      --shadow-md:     0 4px 16px rgba(0,0,0,.09);
+      --shadow-lg:     0 12px 40px rgba(0,0,0,.13);
+      --transition:    .22s ease;
+      --max-w:         1180px;
+      --nav-h:         68px;
+    }
+
+    /* =============================================
+       RESET & BASE
+       ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      color: var(--c-text);
+      background: var(--c-white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; border: none; background: none; }
+    ul { list-style: none; }
+    :focus-visible {
+      outline: 3px solid var(--c-primary);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* =============================================
+       UTILITIES
+       ============================================= */
+    .container { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 20px; }
+    .section { padding: 80px 0; }
+    .section--gray { background: var(--c-gray-1); }
+    .section--dark { background: var(--c-dark); color: var(--c-white); }
+    .section__eyebrow {
+      font-size: 12px; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--c-primary);
+      margin-bottom: 10px; display: block;
+    }
+    .section__title {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 600;
+      line-height: 1.18;
+      color: var(--c-dark);
+      margin-bottom: 14px;
+    }
+    .section--dark .section__title { color: var(--c-white); }
+    .section__subtitle {
+      font-size: 17px;
+      color: var(--c-text-2);
+      max-width: 520px;
+      line-height: 1.65;
+    }
+    .section--dark .section__subtitle { color: var(--c-gray-3); }
+    .section__header { margin-bottom: 52px; }
+    .section__header--center { text-align: center; }
+    .section__header--center .section__subtitle { margin: 0 auto; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 26px; border-radius: var(--radius-md);
+      font-size: 15px; font-weight: 600;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .btn:active { transform: scale(.97); }
+    .btn--primary {
+      background: var(--c-primary); color: var(--c-white);
+      box-shadow: 0 2px 12px rgba(26,122,74,.3);
+    }
+    .btn--primary:hover { background: var(--c-primary-dk); box-shadow: 0 4px 20px rgba(26,122,74,.4); }
+    .btn--accent {
+      background: var(--c-accent); color: var(--c-dark);
+      box-shadow: 0 2px 12px rgba(244,160,28,.3);
+    }
+    .btn--accent:hover { background: var(--c-accent-dk); color: var(--c-white); }
+    .btn--outline {
+      background: transparent; color: var(--c-primary);
+      border: 2px solid var(--c-primary);
+    }
+    .btn--outline:hover { background: var(--c-primary); color: var(--c-white); }
+    .btn--ghost {
+      background: rgba(255,255,255,.15); color: var(--c-white);
+      border: 1.5px solid rgba(255,255,255,.35);
+    }
+    .btn--ghost:hover { background: rgba(255,255,255,.25); }
+    .btn--sm { padding: 9px 18px; font-size: 13px; }
+
+    .badge {
+      display: inline-block; padding: 4px 11px; border-radius: 99px;
+      font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
+    }
+    .badge--red { background: var(--c-red); color: var(--c-white); }
+    .badge--accent { background: var(--c-accent); color: var(--c-dark); }
+    .badge--green { background: var(--c-primary); color: var(--c-white); }
+
+    .tag {
+      display: inline-block; padding: 5px 14px;
+      border-radius: 99px; font-size: 13px; font-weight: 600;
+      background: var(--c-gray-2); color: var(--c-text-2);
+      cursor: pointer; transition: all var(--transition);
+      border: 1.5px solid transparent;
+    }
+    .tag:hover, .tag.active {
+      background: var(--c-primary-lt);
+      color: var(--c-primary);
+      border-color: var(--c-primary);
+    }
+    .tag.active { cursor: default; }
+
+    /* =============================================
+       SKIP LINK (Accesibilidad)
+       ============================================= */
+    .skip-link {
+      position: absolute; top: -100%; left: 20px;
+      background: var(--c-primary); color: #fff;
+      padding: 8px 16px; border-radius: 0 0 8px 8px;
+      font-weight: 600; z-index: 9999;
+      transition: top .2s;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* =============================================
+       HEADER / NAV
+       ============================================= */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(14px) saturate(160%);
+      -webkit-backdrop-filter: blur(14px) saturate(160%);
+      border-bottom: 1px solid var(--c-gray-2);
+      height: var(--nav-h);
+      transition: box-shadow var(--transition);
+    }
+    .header.scrolled { box-shadow: var(--shadow-md); }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 100%;
+    }
+    .nav__logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-display);
+      font-size: 24px; font-weight: 600; color: var(--c-primary);
+      letter-spacing: -.01em;
+    }
+    .nav__logo-icon {
+      width: 38px; height: 38px; background: var(--c-primary);
+      border-radius: 10px; display: flex; align-items: center;
+      justify-content: center; font-size: 20px;
+    }
+    .nav__links {
+      display: flex; align-items: center; gap: 6px;
+    }
+    .nav__link {
+      padding: 7px 14px; border-radius: var(--radius-sm);
+      font-size: 14.5px; font-weight: 500; color: var(--c-text-2);
+      transition: all var(--transition);
+    }
+    .nav__link:hover, .nav__link.active {
+      background: var(--c-primary-lt);
+      color: var(--c-primary);
+    }
+    .nav__actions { display: flex; align-items: center; gap: 10px; }
+    .nav__whatsapp {
+      display: flex; align-items: center; gap: 7px;
+      padding: 9px 18px; background: #25D366; color: #fff;
+      border-radius: var(--radius-md); font-size: 14px; font-weight: 600;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .nav__whatsapp:hover { background: #1DA851; transform: translateY(-1px); }
+    .nav__whatsapp svg { width: 18px; height: 18px; fill: currentColor; }
+    .nav__hamburger {
+      display: none; width: 40px; height: 40px;
+      align-items: center; justify-content: center;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--c-gray-2);
+      color: var(--c-text);
+      transition: background var(--transition);
+    }
+    .nav__hamburger:hover { background: var(--c-gray-1); }
+    .nav__hamburger svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 2; }
+
+    /* Mobile menu */
+    .mobile-menu {
+      display: none; position: fixed;
+      top: var(--nav-h); left: 0; right: 0; bottom: 0;
+      background: var(--c-white); z-index: 850;
+      padding: 28px 20px; overflow-y: auto;
+      transform: translateY(-8px); opacity: 0;
+      pointer-events: none;
+      transition: opacity .22s ease, transform .22s ease;
+    }
+    .mobile-menu.open {
+      opacity: 1; transform: none; pointer-events: auto;
+    }
+    .mobile-menu__link {
+      display: flex; align-items: center; gap: 12px;
+      padding: 14px 16px; border-radius: var(--radius-md);
+      font-size: 17px; font-weight: 500; color: var(--c-text);
+      border-bottom: 1px solid var(--c-gray-2);
+      transition: background var(--transition);
+    }
+    .mobile-menu__link:hover { background: var(--c-gray-1); color: var(--c-primary); }
+    .mobile-menu__link svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; flex-shrink: 0; }
+
+    /* =============================================
+       HERO
+       ============================================= */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding: calc(var(--nav-h) + 40px) 0 60px;
+      background: linear-gradient(135deg, #0D3D24 0%, #1A7A4A 55%, #2DA866 100%);
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero__inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center; gap: 60px;
+      position: relative; z-index: 1;
+    }
+    .hero__eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,.15); color: #fff;
+      padding: 6px 16px; border-radius: 99px;
+      font-size: 13px; font-weight: 600; letter-spacing: .06em;
+      margin-bottom: 20px; border: 1px solid rgba(255,255,255,.2);
+    }
+    .hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 5.5vw, 64px);
+      font-weight: 300;
+      color: var(--c-white);
+      line-height: 1.08;
+      margin-bottom: 20px;
+    }
+    .hero__title em {
+      font-style: italic; font-weight: 600; color: var(--c-accent);
+    }
+    .hero__desc {
+      font-size: 18px; color: rgba(255,255,255,.78);
+      line-height: 1.65; margin-bottom: 36px; max-width: 480px;
+    }
+    .hero__actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    .hero__stats {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; margin-top: 48px;
+      background: rgba(255,255,255,.15); border-radius: var(--radius-lg);
+      overflow: hidden; border: 1px solid rgba(255,255,255,.15);
+    }
+    .hero__stat {
+      padding: 20px 18px; background: rgba(255,255,255,.08); text-align: center;
+    }
+    .hero__stat-num {
+      font-family: var(--font-display);
+      font-size: 30px; font-weight: 600; color: var(--c-accent);
+      display: block; line-height: 1;
+    }
+    .hero__stat-label { font-size: 12px; color: rgba(255,255,255,.65); margin-top: 4px; }
+    .hero__image-wrap {
+      position: relative; border-radius: var(--radius-xl);
+      overflow: hidden; box-shadow: var(--shadow-lg);
+      aspect-ratio: 4/5;
+    }
+    .hero__image {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+    }
+    .hero__badge-float {
+      position: absolute; bottom: 28px; left: -20px;
+      background: var(--c-white); padding: 14px 20px;
+      border-radius: var(--radius-md); box-shadow: var(--shadow-lg);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .hero__badge-float-icon {
+      width: 44px; height: 44px; background: var(--c-primary-lt);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px;
+    }
+    .hero__badge-float-title { font-weight: 700; font-size: 15px; color: var(--c-text); line-height: 1.2; }
+    .hero__badge-float-sub  { font-size: 12px; color: var(--c-text-2); }
+
+    /* =============================================
+       PROMOBANNER
+       ============================================= */
+    .promo-bar {
+      background: var(--c-accent); padding: 12px 0;
+      overflow: hidden; position: relative;
+    }
+    .promo-bar__track {
+      display: flex; gap: 60px;
+      animation: marquee 20s linear infinite;
+      white-space: nowrap; width: max-content;
+    }
+    .promo-bar__item {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 700; color: var(--c-dark);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .promo-bar__dot { width: 6px; height: 6px; background: var(--c-dark); border-radius: 50%; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* =============================================
+       CATEGORÍAS (filtro)
+       ============================================= */
+    .categories-strip {
+      padding: 32px 0 0; border-bottom: 1px solid var(--c-gray-2);
+    }
+    .categories-strip__scroll {
+      display: flex; gap: 10px; overflow-x: auto;
+      padding-bottom: 24px; scrollbar-width: none;
+    }
+    .categories-strip__scroll::-webkit-scrollbar { display: none; }
+    .cat-chip {
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      padding: 14px 18px; border-radius: var(--radius-md);
+      font-size: 13px; font-weight: 600; color: var(--c-text-2);
+      background: var(--c-gray-1); cursor: pointer; white-space: nowrap;
+      border: 1.5px solid var(--c-gray-2);
+      transition: all var(--transition); min-width: 90px;
+    }
+    .cat-chip:hover, .cat-chip.active {
+      background: var(--c-primary-lt); color: var(--c-primary);
+      border-color: var(--c-primary);
+      box-shadow: 0 2px 10px rgba(26,122,74,.12);
+    }
+    .cat-chip__icon { font-size: 24px; }
+
+    /* =============================================
+       PRODUCTOS
+       ============================================= */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 22px;
+    }
+    .product-card {
+      background: var(--c-white); border-radius: var(--radius-lg);
+      border: 1.5px solid var(--c-gray-2);
+      overflow: hidden;
+      transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+    }
+    .product-card:hover {
+      box-shadow: var(--shadow-md); transform: translateY(-3px);
+      border-color: var(--c-primary);
+    }
+    .product-card__img-wrap {
+      position: relative; aspect-ratio: 1 / 1;
+      overflow: hidden; background: var(--c-gray-1);
+    }
+    .product-card__img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .4s ease;
+    }
+    .product-card:hover .product-card__img { transform: scale(1.05); }
+    .product-card__badge {
+      position: absolute; top: 12px; left: 12px; z-index: 1;
+    }
+    .product-card__body { padding: 16px; }
+    .product-card__cat { font-size: 11px; font-weight: 700; color: var(--c-primary); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 4px; }
+    .product-card__name { font-size: 15px; font-weight: 600; color: var(--c-text); margin-bottom: 8px; line-height: 1.35; }
+    .product-card__pricing { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .product-card__price { font-size: 20px; font-weight: 800; color: var(--c-primary); }
+    .product-card__old-price { font-size: 13px; color: var(--c-gray-3); text-decoration: line-through; }
+    .product-card__discount { font-size: 12px; font-weight: 700; color: var(--c-red); }
+    .product-card__footer {
+      padding: 0 16px 16px;
+    }
+    .product-card__cta {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; padding: 10px; border-radius: var(--radius-sm);
+      background: var(--c-primary-lt); color: var(--c-primary);
+      font-size: 13.5px; font-weight: 700;
+      transition: background var(--transition), color var(--transition);
+    }
+    .product-card__cta:hover { background: var(--c-primary); color: var(--c-white); }
+    .product-card__cta svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    .products-more {
+      text-align: center; margin-top: 48px;
+    }
+    .no-results {
+      text-align: center; padding: 60px 20px; color: var(--c-text-2); display: none;
+    }
+    .no-results svg { width: 48px; height: 48px; stroke: var(--c-gray-3); fill: none; stroke-width: 1.5; margin: 0 auto 16px; }
+
+    /* =============================================
+       PROMOCIONES
+       ============================================= */
+    .promos-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 22px;
+    }
+    .promo-card {
+      border-radius: var(--radius-lg); overflow: hidden;
+      position: relative; aspect-ratio: 16/9;
+      display: flex; align-items: flex-end;
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .promo-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .promo-card--large { grid-column: span 7; aspect-ratio: 16/10; }
+    .promo-card--small { grid-column: span 5; }
+    .promo-card--tall  { grid-column: span 5; aspect-ratio: 3/4; }
+    .promo-card__bg {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center;
+    }
+    .promo-card__overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.75) 0%, rgba(0,0,0,.15) 60%, transparent 100%);
+    }
+    .promo-card__body {
+      position: relative; z-index: 1; padding: 24px;
+    }
+    .promo-card__label {
+      font-size: 11px; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--c-accent);
+      margin-bottom: 6px;
+    }
+    .promo-card__title {
+      font-family: var(--font-display); font-size: clamp(18px, 2.5vw, 28px);
+      font-weight: 600; color: var(--c-white); line-height: 1.2; margin-bottom: 10px;
+    }
+    .promo-card__desc { font-size: 14px; color: rgba(255,255,255,.8); margin-bottom: 14px; }
+    .promo-card__tag {
+      display: inline-block; background: var(--c-accent);
+      color: var(--c-dark); padding: 5px 14px; border-radius: 99px;
+      font-size: 13px; font-weight: 800;
+    }
+
+    /* =============================================
+       NOSOTROS
+       ============================================= */
+    .about__inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
+    }
+    .about__image-stack { position: relative; }
+    .about__img-main {
+      border-radius: var(--radius-xl); overflow: hidden;
+      aspect-ratio: 4/5; box-shadow: var(--shadow-lg);
+    }
+    .about__img-main img { width: 100%; height: 100%; object-fit: cover; }
+    .about__img-accent {
+      position: absolute; bottom: -20px; right: -20px;
+      width: 200px; border-radius: var(--radius-lg); overflow: hidden;
+      box-shadow: var(--shadow-lg); border: 4px solid var(--c-white);
+    }
+    .about__img-accent img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+    .about__years {
+      position: absolute; top: 30px; left: -24px;
+      background: var(--c-primary); color: var(--c-white);
+      width: 100px; height: 100px; border-radius: 50%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      box-shadow: var(--shadow-lg);
+    }
+    .about__years-num { font-family: var(--font-display); font-size: 34px; font-weight: 600; line-height: 1; }
+    .about__years-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; opacity: .85; }
+    .about__values {
+      margin-top: 36px; display: flex; flex-direction: column; gap: 18px;
+    }
+    .about__value {
+      display: flex; gap: 16px;
+    }
+    .about__value-icon {
+      width: 44px; height: 44px; background: var(--c-primary-lt);
+      border-radius: var(--radius-sm); flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: 20px;
+    }
+    .about__value h3 { font-size: 15px; font-weight: 700; color: var(--c-text); margin-bottom: 3px; }
+    .about__value p { font-size: 14px; color: var(--c-text-2); line-height: 1.5; }
+
+    /* Misión / Visión */
+    .mv-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px;
+    }
+    .mv-card {
+      padding: 32px; border-radius: var(--radius-lg);
+      border: 1.5px solid var(--c-gray-2); background: var(--c-white);
+    }
+    .mv-card__icon { font-size: 32px; margin-bottom: 14px; }
+    .mv-card h3 {
+      font-family: var(--font-display); font-size: 22px;
+      font-weight: 600; color: var(--c-primary); margin-bottom: 12px;
+    }
+    .mv-card p { font-size: 15px; color: var(--c-text-2); line-height: 1.65; }
+
+    /* =============================================
+       SUCURSALES
+       ============================================= */
+    .branches__inner { display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; align-items: start; }
+    .branches__list { display: flex; flex-direction: column; gap: 16px; }
+    .branch-card {
+      padding: 22px; border-radius: var(--radius-lg);
+      border: 1.5px solid var(--c-gray-2); background: var(--c-white);
+      cursor: pointer;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .branch-card.active { border-color: var(--c-primary); box-shadow: 0 0 0 3px rgba(26,122,74,.1); }
+    .branch-card:hover { border-color: var(--c-primary); }
+    .branch-card__top { display: flex; gap: 14px; align-items: flex-start; }
+    .branch-card__icon {
+      width: 44px; height: 44px; background: var(--c-primary-lt);
+      border-radius: var(--radius-sm); flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: 22px;
+    }
+    .branch-card__name { font-size: 16px; font-weight: 700; color: var(--c-text); }
+    .branch-card__address { font-size: 14px; color: var(--c-text-2); margin-top: 3px; }
+    .branch-card__details {
+      margin-top: 14px; padding-top: 14px;
+      border-top: 1px solid var(--c-gray-2);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    }
+    .branch-card__detail { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--c-text-2); }
+    .branch-card__detail svg { width: 15px; height: 15px; stroke: var(--c-primary); fill: none; stroke-width: 2; flex-shrink: 0; }
+    .map-embed {
+      border-radius: var(--radius-xl); overflow: hidden;
+      box-shadow: var(--shadow-md); position: sticky; top: calc(var(--nav-h) + 20px);
+    }
+    .map-embed iframe { display: block; width: 100%; height: 420px; border: 0; }
+    .map-placeholder {
+      background: var(--c-gray-1); display: flex; flex-direction: column;
+      align-items: center; justify-content: center; height: 420px;
+      color: var(--c-text-2); gap: 12px; font-size: 15px;
+    }
+    .map-placeholder svg { width: 48px; height: 48px; stroke: var(--c-gray-3); fill: none; stroke-width: 1.5; }
+
+    /* =============================================
+       CONTACTO
+       ============================================= */
+    .contact__inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; }
+    .contact__info { display: flex; flex-direction: column; gap: 24px; }
+    .contact__item { display: flex; align-items: flex-start; gap: 16px; }
+    .contact__item-icon {
+      width: 48px; height: 48px; background: var(--c-primary-lt);
+      border-radius: var(--radius-md); flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .contact__item-icon svg { width: 22px; height: 22px; stroke: var(--c-primary); fill: none; stroke-width: 2; }
+    .contact__item h3 { font-size: 15px; font-weight: 700; color: var(--c-text); margin-bottom: 4px; }
+    .contact__item p, .contact__item a { font-size: 14px; color: var(--c-text-2); line-height: 1.55; }
+    .contact__item a:hover { color: var(--c-primary); }
+    .contact__social { margin-top: 8px; }
+    .contact__social h3 { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
+    .social-links { display: flex; gap: 10px; }
+    .social-link {
+      width: 40px; height: 40px; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      background: var(--c-gray-2); color: var(--c-text-2);
+      font-size: 18px; transition: all var(--transition);
+    }
+    .social-link:hover { background: var(--c-primary); color: var(--c-white); transform: translateY(-2px); }
+
+    /* Formulario */
+    .contact-form {
+      background: var(--c-gray-1); border-radius: var(--radius-xl);
+      padding: 40px; border: 1.5px solid var(--c-gray-2);
+    }
+    .form-group { margin-bottom: 20px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-label {
+      display: block; font-size: 13.5px; font-weight: 700;
+      color: var(--c-text-2); margin-bottom: 7px; letter-spacing: .01em;
+    }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; padding: 12px 16px;
+      border: 1.5px solid var(--c-gray-2);
+      border-radius: var(--radius-md); font-family: var(--font-body);
+      font-size: 15px; color: var(--c-text);
+      background: var(--c-white);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--c-primary);
+      box-shadow: 0 0 0 3px rgba(26,122,74,.12);
+    }
+    .form-textarea { min-height: 130px; resize: vertical; }
+    .form-select { appearance: none; cursor: pointer; }
+    .form-submit {
+      width: 100%; padding: 14px;
+      background: var(--c-primary); color: var(--c-white);
+      border-radius: var(--radius-md); font-size: 16px; font-weight: 700;
+      font-family: var(--font-body);
+      transition: background var(--transition), transform var(--transition);
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+    }
+    .form-submit:hover { background: var(--c-primary-dk); transform: translateY(-1px); }
+    .form-submit:active { transform: scale(.98); }
+    .form-note { font-size: 12px; color: var(--c-gray-4); text-align: center; margin-top: 14px; }
+    .form-success {
+      display: none; text-align: center; padding: 40px 20px;
+      color: var(--c-primary);
+    }
+    .form-success svg { width: 56px; height: 56px; stroke: var(--c-primary); fill: none; stroke-width: 1.5; margin: 0 auto 16px; }
+
+    /* =============================================
+       TESTIMONIOS
+       ============================================= */
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    }
+    .testimonial-card {
+      background: var(--c-white); padding: 28px; border-radius: var(--radius-lg);
+      border: 1.5px solid var(--c-gray-2);
+    }
+    .testimonial-card__stars { color: var(--c-accent); font-size: 18px; margin-bottom: 14px; }
+    .testimonial-card__text { font-size: 15px; color: var(--c-text-2); line-height: 1.65; margin-bottom: 20px; font-style: italic; }
+    .testimonial-card__author { display: flex; align-items: center; gap: 12px; }
+    .testimonial-card__avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--c-primary); color: var(--c-white);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 700; flex-shrink: 0;
+    }
+    .testimonial-card__name { font-size: 14px; font-weight: 700; color: var(--c-text); }
+    .testimonial-card__role { font-size: 12px; color: var(--c-text-2); }
+
+    /* =============================================
+       CTA BAND
+       ============================================= */
+    .cta-band {
+      background: linear-gradient(135deg, #1A7A4A, #0D3D24);
+      padding: 80px 0; text-align: center; position: relative; overflow: hidden;
+    }
+    .cta-band::after {
+      content: '🛒'; position: absolute; right: -30px; bottom: -40px;
+      font-size: 200px; opacity: .05; line-height: 1;
+    }
+    .cta-band__title {
+      font-family: var(--font-display); font-size: clamp(28px, 4vw, 46px);
+      font-weight: 600; color: var(--c-white); margin-bottom: 14px;
+    }
+    .cta-band__sub { font-size: 18px; color: rgba(255,255,255,.75); margin-bottom: 36px; }
+    .cta-band__actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+    /* =============================================
+       FOOTER
+       ============================================= */
+    .footer { background: var(--c-dark); color: var(--c-white); padding: 64px 0 0; }
+    .footer__inner {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 48px;
+      padding-bottom: 48px;
+    }
+    .footer__brand-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-display); font-size: 22px; font-weight: 600;
+      color: var(--c-white); margin-bottom: 14px;
+    }
+    .footer__brand-logo-icon {
+      width: 36px; height: 36px; background: var(--c-primary);
+      border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px;
+    }
+    .footer__brand-desc { font-size: 14px; color: var(--c-gray-3); line-height: 1.65; margin-bottom: 20px; }
+    .footer__social-row { display: flex; gap: 10px; }
+    .footer__social-btn {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: rgba(255,255,255,.08); color: var(--c-gray-3);
+      display: flex; align-items: center; justify-content: center; font-size: 16px;
+      transition: all var(--transition);
+    }
+    .footer__social-btn:hover { background: var(--c-primary); color: var(--c-white); }
+    .footer__col-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--c-gray-3); margin-bottom: 18px; }
+    .footer__links { display: flex; flex-direction: column; gap: 10px; }
+    .footer__link { font-size: 14px; color: rgba(255,255,255,.65); transition: color var(--transition); }
+    .footer__link:hover { color: var(--c-primary); }
+    .footer__contact-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+    .footer__contact-item svg { width: 16px; height: 16px; stroke: var(--c-primary); fill: none; stroke-width: 2; flex-shrink: 0; margin-top: 2px; }
+    .footer__contact-item span { font-size: 13.5px; color: rgba(255,255,255,.65); line-height: 1.5; }
+    .footer__bottom {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding: 20px 0; display: flex;
+      align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer__copy { font-size: 13px; color: rgba(255,255,255,.4); }
+    .footer__bottom-links { display: flex; gap: 20px; }
+    .footer__bottom-link { font-size: 13px; color: rgba(255,255,255,.4); transition: color var(--transition); }
+    .footer__bottom-link:hover { color: var(--c-primary); }
+
+    /* =============================================
+       WHATSAPP FLOAT
+       ============================================= */
+    .wa-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 800;
+      display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
+    }
+    .wa-float__bubble {
+      background: var(--c-white); padding: 10px 16px;
+      border-radius: 12px 12px 2px 12px; box-shadow: var(--shadow-lg);
+      font-size: 13.5px; font-weight: 600; color: var(--c-text);
+      animation: wa-pulse 2s ease-in-out infinite;
+      white-space: nowrap;
+    }
+    @keyframes wa-pulse { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
+    .wa-float__btn {
+      width: 58px; height: 58px; border-radius: 50%;
+      background: #25D366; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,.4);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .wa-float__btn:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,.5); }
+    .wa-float__btn svg { width: 30px; height: 30px; fill: #fff; }
+
+    /* =============================================
+       SCROLL TO TOP
+       ============================================= */
+    .scroll-top {
+      position: fixed; bottom: 96px; right: 28px; z-index: 800;
+      width: 42px; height: 42px; background: var(--c-white);
+      border: 1.5px solid var(--c-gray-2); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: var(--shadow-md); cursor: pointer; opacity: 0;
+      transform: translateY(12px); transition: all var(--transition);
+    }
+    .scroll-top.visible { opacity: 1; transform: none; }
+    .scroll-top:hover { background: var(--c-primary-lt); border-color: var(--c-primary); }
+    .scroll-top svg { width: 18px; height: 18px; stroke: var(--c-primary); fill: none; stroke-width: 2.5; }
+
+    /* =============================================
+       LOADER / TOAST
+       ============================================= */
+    .toast {
+      position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%) translateY(80px);
+      background: var(--c-dark); color: var(--c-white);
+      padding: 12px 24px; border-radius: 99px; font-size: 14px; font-weight: 600;
+      z-index: 9999; transition: transform .3s ease;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); }
+    .toast--success { background: var(--c-primary); }
+
+    /* =============================================
+       RESPONSIVE
+       ============================================= */
+    @media (max-width: 1080px) {
+      .footer__inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 900px) {
+      .hero__inner    { grid-template-columns: 1fr; text-align: center; }
+      .hero__image-wrap { max-width: 480px; margin: 0 auto; }
+      .hero__stats    { max-width: 480px; margin: 32px auto 0; }
+      .hero__actions  { justify-content: center; }
+      .hero__badge-float { left: 0; bottom: -10px; }
+      .about__inner   { grid-template-columns: 1fr; }
+      .about__image-stack { max-width: 440px; margin: 0 auto; }
+      .mv-grid        { grid-template-columns: 1fr; }
+      .branches__inner { grid-template-columns: 1fr; }
+      .contact__inner { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .promos-grid    { grid-template-columns: 1fr; }
+      .promo-card--large,
+      .promo-card--small,
+      .promo-card--tall { grid-column: span 12; }
+      .nav__links, .nav__actions { display: none; }
+      .nav__hamburger { display: flex; }
+      .mobile-menu    { display: block; }
+    }
+    @media (max-width: 640px) {
+      .section { padding: 56px 0; }
+      .footer__inner { grid-template-columns: 1fr; gap: 32px; }
+      .footer__bottom { flex-direction: column; text-align: center; }
+      .contact-form { padding: 24px; }
+      .form-row { grid-template-columns: 1fr; }
+      .hero__stats { grid-template-columns: 1fr; }
+      .wa-float { bottom: 20px; right: 16px; }
+      .scroll-top { bottom: 88px; right: 16px; }
+    }
+
+    /* =============================================
+       REDUCCIÓN DE MOVIMIENTO (Accesibilidad)
+       ============================================= */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <!-- =============================================
+       HEADER
+       ============================================= -->
+  <header class="header" id="header" role="banner">
+    <div class="container">
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav__logo" aria-label="Supermercado la Abundancia       <div class="nav__logo-icon" aria-hidden="true">🛒</div>
+          LaAbundancia
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a class="nav__link" href="#inicio">Inicio</a></li>
+          <li><a class="nav__link" href="#productos">Productos</a></li>
+          <li><a class="nav__link" href="#promociones">Promociones</a></li>
+          <li><a class="nav__link" href="#nosotros">Nosotros</a></li>
+          <li><a class="nav__link" href="#sucursales">Sucursales</a></li>
+          <li><a class="nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="nav__whatsapp" href="https://wa.me/573001234567?text=Hola%2C%20quiero%20más%20información" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true" role="img"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+            <svg id="hamburger-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Menú móvil" aria-hidden="true">
+    <ul role="list">
+      <li><a class="mobile-menu__link" href="#inicio" onclick="closeMobileMenu()">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Inicio
+      </a></li>
+      <li><a class="mobile-menu__link" href="#productos" onclick="closeMobileMenu()">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+        Productos
+      </a></li>
+      <li><a class="mobile-menu__link" href="#promociones" onclick="closeMobileMenu()">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Promociones
+      </a></li>
+      <li><a class="mobile-menu__link" href="#nosotros" onclick="closeMobileMenu()">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Nosotros
+      </a></li>
+      <li><a class="mobile-menu__link" href="#sucursales" onclick="closeMobileMenu()">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Sucursales
+      </a></li>
+      <li><a class="mobile-menu__link" href="#contacto" onclick="closeMobileMenu()">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Contacto
+      </a></li>
+    </ul>
+    <div style="margin-top:28px; padding-top:20px; border-top:1px solid var(--c-gray-2);">
+      <a class="btn btn--primary" style="width:100%;justify-content:center;" href="https://wa.me/573001234567" target="_blank" rel="noopener">
+        💬 Contáctanos por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- =============================================
+       MAIN CONTENT
+       ============================================= -->
+  <main id="main-content">
+
+    <!-- =============================================
+         HERO
+         ============================================= -->
+    <section class="hero" id="inicio" aria-label="Bienvenida">
+      <div class="container">
+        <div class="hero__inner">
+          <div>
+            <div class="hero__eyebrow">
+              <span>🌿</span> Pasto, Nariño · Catambuco
+            </div>
+            <h1 class="hero__title">
+              Encuentra lo mejor<br><em> en cada compra,</em><br>calidad y variedad<br> en cada pasillo
+            </h1>
+            <p class="hero__desc">
+              Tu supermercado de confianza en catambuco Nariño. Encuentra variedad de productos de las mejores marcas y promociones que realmente valen la pena — cerca de casa.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--accent" href="#productos">
+                Ver catálogo
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a class="btn btn--ghost" href="#promociones">Ver ofertas</a>
+            </div>
+            <div class="hero__stats" aria-label="Estadísticas LaAbundancia">
+              <div class="hero__stat">
+                <span class="hero__stat-num">3</span>
+                <div class="hero__stat-label">Sucursales</div>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-num">+5k</span>
+                <div class="hero__stat-label">Productos</div>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-num">20+</span>
+                <div class="hero__stat-label">Años</div>
+              </div>
+            </div>
+          </div>
+          <div style="position:relative;">
+            
+            <div class="hero__image-wrap">
+              <img
+                class="hero__image"
+                src="https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=800&auto=format&fit=crop&q=80"
+                alt="Interior del supermercado Supermercado la Abundanciafrescos y coloridos"
+                width="800" height="1000"
+                loading="eager"
+              />
+            </div>
+            <div class="hero__badge-float" aria-hidden="true">
+              <div class="hero__badge-float-icon">✅</div>
+              <div>
+                <div class="hero__badge-float-title">Calidad garantizada</div>
+                <div class="hero__badge-float-sub">Productos 100% frescos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barra de promociones animada 
+    <div class="promo-bar" role="marquee" aria-label="Promociones destacadas">
+      <div class="promo-bar__track" aria-hidden="true">
+        <span class="promo-bar__item"><span class="promo-bar__dot"></span>🥦 Verduras frescas 3×2 todos los martes</span>
+        <span class="promo-bar__item"><span class="promo-bar__dot"></span>🍗 Pollo entero a $9.900/kg este fin de semana</span>
+        <span class="promo-bar__item"><span class="promo-bar__dot"></span>🥛 Lácteos hasta 30% de descuento</span>
+        <span class="promo-bar__item"><span class="promo-bar__dot"></span>🍓 Frutas exóticas importadas · nuevo ingreso</span>
+        <span class="promo-bar__item"><span class="promo-bar__dot"></span>🧹 Aseo del hogar 2×1 en marcas seleccionadas</span>
+        <span class="promo-bar__item"><span class="promo-bar__dot"></span>🥦 Verduras frescas 3×2 todos los martes</span>
+        <span class="promo-bar__item"><span class="promo-bar__dot"></span>🍗 Pollo entero a $9.900/kg este fin de semana</span>
+        <span class="promo-bar__item"><span class="promo-bar__dot"></span>🥛 Lácteos hasta 30% de descuento</span>
+        <span class="promo-bar__item"><span class="promo-bar__dot"></span>🍓 Frutas exóticas importadas · nuevo ingreso</span>
+        <span class="promo-bar__item"><span class="promo-bar__dot"></span>🧹 Aseo del hogar 2×1 en marcas seleccionadas</span>
+      </div>
+    </div>  
+
+    <!-- =============================================
+         CATÁLOGO DE PRODUCTOS
+         ============================================= -->
+    <section class="section" id="productos" aria-labelledby="productos-title">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__eyebrow">Catálogo</span>
+          <h2 class="section__title" id="productos-title">Explora nuestros productos</h2>
+          <p class="section__subtitle">Desde frutas y verduras hasta abarrotes y bebidas — todo lo que necesitas bajo un mismo techo.</p>
+        </div>
+
+        <!-- Filtro de categorías -->
+        <div class="categories-strip" role="navigation" aria-label="Filtro por categoría">
+          <div class="categories-strip__scroll" role="list">
+            <button class="cat-chip active" role="listitem" data-cat="todos" aria-pressed="true">
+              <span class="cat-chip__icon" aria-hidden="true">🏪</span>
+              Todos
+            </button>
+            <button class="cat-chip" role="listitem" data-cat="frutas" aria-pressed="false">
+              <span class="cat-chip__icon" aria-hidden="true">🍎</span>
+              Frutas
+            </button>
+            <button class="cat-chip" role="listitem" data-cat="verduras" aria-pressed="false">
+              <span class="cat-chip__icon" aria-hidden="true">🥦</span>
+              Verduras
+            </button>
+            <button class="cat-chip" role="listitem" data-cat="carnes" aria-pressed="false">
+              <span class="cat-chip__icon" aria-hidden="true">🥩</span>
+              Carnes
+            </button>
+            <button class="cat-chip" role="listitem" data-cat="lacteos" aria-pressed="false">
+              <span class="cat-chip__icon" aria-hidden="true">🥛</span>
+              Lácteos
+            </button>
+            <button class="cat-chip" role="listitem" data-cat="abarrotes" aria-pressed="false">
+              <span class="cat-chip__icon" aria-hidden="true">🥫</span>
+              Abarrotes
+            </button>
+            <button class="cat-chip" role="listitem" data-cat="bebidas" aria-pressed="false">
+              <span class="cat-chip__icon" aria-hidden="true">🥤</span>
+              Bebidas
+            </button>
+            <button class="cat-chip" role="listitem" data-cat="aseo" aria-pressed="false">
+              <span class="cat-chip__icon" aria-hidden="true">🧼</span>
+              Aseo
+            </button>
+            <button class="cat-chip" role="listitem" data-cat="panaderia" aria-pressed="false">
+              <span class="cat-chip__icon" aria-hidden="true">🥐</span>
+              Panadería
+            </button>
+          </div>
+        </div>
+
+        <div style="margin-top:36px;">
+          <div class="products-grid" id="products-grid" role="list" aria-label="Catálogo de productos">
+            <!-- Los productos se generan con JS -->
+          </div>
+          <div class="no-results" id="no-results" role="status">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <p>No hay productos en esta categoría por el momento.</p>
+          </div>
+        </div>
+
+        <div class="products-more">
+          <a class="btn btn--outline" href="https://wa.me/573001234567?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20el%20cat%C3%A1logo%20completo" target="_blank" rel="noopener">
+            Ver catálogo completo vía WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         PROMOCIONES
+         ============================================= -->
+    <section class="section section--gray" id="promociones" aria-labelledby="promos-title">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__eyebrow">Ofertas</span>
+          <h2 class="section__title" id="promos-title">Promociones vigentes</h2>
+          <p class="section__subtitle">Aprovecha nuestras ofertas semanales en productos seleccionados. ¡No dejes pasar estas oportunidades!</p>
+        </div>
+        <div class="promos-grid" role="list">
+          <article class="promo-card promo-card--large" role="listitem" aria-labelledby="promo1-title">
+            <div class="promo-card__bg" style="background-image:url('https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=900&auto=format&fit=crop&q=80');" role="img" aria-label="Canasta de frutas y verduras frescas"></div>
+            <div class="promo-card__overlay"></div>
+            <div class="promo-card__body">
+              <div class="promo-card__label">🔥 Oferta de la semana</div>
+              <h3 class="promo-card__title" id="promo1-title">Frutas y Verduras<br>Seleccionadas</h3>
+              <p class="promo-card__desc">La frescura directo del campo a tu mesa</p>
+              <span class="promo-card__tag">Lleva 3, paga 2</span>
+            </div>
+          </article>
+          <article class="promo-card promo-card--small" role="listitem" aria-labelledby="promo2-title">
+            <div class="promo-card__bg" style="background-image:url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&auto=format&fit=crop&q=80');" role="img" aria-label="Productos lácteos"></div>
+            <div class="promo-card__overlay"></div>
+            <div class="promo-card__body">
+              <div class="promo-card__label">⏰ Solo hasta el domingo</div>
+              <h3 class="promo-card__title" id="promo2-title">Zona Lácteos</h3>
+              <p class="promo-card__desc">Leche, queso y yogur</p>
+              <span class="promo-card__tag">Hasta 30% off</span>
+            </div>
+          </article>
+          <article class="promo-card promo-card--tall" role="listitem" aria-labelledby="promo3-title">
+            <div class="promo-card__bg" style="background-image:url('https://images.unsplash.com/photo-1567190872028-4ed3f3c16b89?w=700&auto=format&fit=crop&q=80');" role="img" aria-label="Carnes frescas en mostrador"></div>
+            <div class="promo-card__overlay"></div>
+            <div class="promo-card__body">
+              <div class="promo-card__label">🥩 Fin de semana</div>
+              <h3 class="promo-card__title" id="promo3-title">Carnicería Premium</h3>
+              <p class="promo-card__desc">Cortes seleccionados, frescos a diario</p>
+              <span class="promo-card__tag">Desde $18.900/kg</span>
+            </div>
+          </article>
+          <article class="promo-card" style="grid-column: span 7;" role="listitem" aria-labelledby="promo4-title">
+            <div class="promo-card__bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop&q=80');" role="img" aria-label="Productos de limpieza y aseo del hogar"></div>
+            <div class="promo-card__overlay"></div>
+            <div class="promo-card__body">
+              <div class="promo-card__label">🧹 Mes del hogar</div>
+              <h3 class="promo-card__title" id="promo4-title">Aseo y Limpieza del Hogar</h3>
+              <p class="promo-card__desc">Marcas líderes en producto 2×1</p>
+              <span class="promo-card__tag">2×1 en marcas seleccionadas</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         TESTIMONIOS
+         ============================================= 
+    <section class="section" aria-labelledby="testimonios-title">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__eyebrow">Clientes</span>
+          <h2 class="section__title" id="testimonios-title">Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="testimonials-grid" role="list">
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="testimonial-card__text">"Llevo más de 10 años comprando en LaAbundancia. La calidad de las frutas y verduras es incomparable, siempre frescas y a muy buen precio."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">MR</div>
+              <div>
+                <div class="testimonial-card__name">María Rodríguez</div>
+                <div class="testimonial-card__role">Cliente frecuente · Pasto Centro</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="testimonial-card__text">"El personal siempre es muy amable y servicial. Los precios son justos y el surtido es excelente. Definitivamente mi supermercado favorito en la ciudad."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">CG</div>
+              <div>
+                <div class="testimonial-card__name">Carlos Gutiérrez</div>
+                <div class="testimonial-card__role">Cliente · Jamondino</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+            <p class="testimonial-card__text">"Me encantan las promociones de los martes en frutas. La carnicería tiene cortes muy buenos y el precio siempre es competitivo. ¡Recomendado!"</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">LP</div>
+              <div>
+                <div class="testimonial-card__name">Lucía Patiño</div>
+                <div class="testimonial-card__role">Cliente · Torobajo</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+-->
+    <!-- =============================================
+         NOSOTROS
+         =============================================
+    <section class="section section--gray" id="nosotros" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__image-stack">
+            <div class="about__img-main">
+              <img
+                src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&auto=format&fit=crop&q=80"
+                alt="Empleados de Supermercado la Abundanciaos clientes en el pasillo de frutas"
+                width="800" height="1000"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__img-accent">
+              <img
+                src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?w=400&auto=format&fit=crop&q=80"
+                alt="Productos orgánicos certificados"
+                width="400" height="400"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__years" aria-label="20 años de trayectoria">
+              <span class="about__years-num">20</span>
+              <span class="about__years-label">años</span>
+            </div>
+          </div>
+          <div>
+            <span class="section__eyebrow">Quiénes somos</span>
+            <h2 class="section__title" id="about-title">Más de # años llevando calidad de productos a los hogares catambuqueños</h2>
+            <p class="section__subtitle">
+              Fundado en 2005 en la ciudad de Pasto, Supermercado la Abundanciaisión de ofrecer productos de alta calidad a precios justos, construyendo relaciones de confianza con las familias nariñenses.
+            </p>
+            <div class="about__values">
+              <div class="about__value">
+                <div class="about__value-icon" aria-hidden="true">🌿</div>
+                <div>
+                  <h3>Compromiso con la frescura</h3>
+                  <p>Trabajamos con proveedores locales para garantizar la cadena de frío y la frescura de cada producto.</p>
+                </div>
+              </div>
+              <div class="about__value">
+                <div class="about__value-icon" aria-hidden="true">🤝</div>
+                <div>
+                  <h3>Apoyo al productor local</h3>
+                  <p>El 60% de nuestros productos frescos provienen de agricultores nariñenses, apoyando la economía regional.</p>
+                </div>
+              </div>
+              <div class="about__value">
+                <div class="about__value-icon" aria-hidden="true">💚</div>
+                <div>
+                  <h3>Responsabilidad ambiental</h3>
+                  <p>Implementamos empaques biodegradables y programas de reciclaje en todas nuestras sucursales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ -->  
+        <!-- Misión y Visión -->
+        <div class="mv-grid" role="list">
+          <article class="mv-card" role="listitem">
+            <div class="mv-card__icon" aria-hidden="true">🎯</div>
+            <h3>Nuestra Misión</h3>
+            <p>Abastecer a los hogares nariñenses con productos de la más alta calidad, a precios justos y con un servicio cálido y humano, contribuyendo al bienestar de nuestras comunidades y al desarrollo sostenible de la región.</p>
+          </article>
+          <article class="mv-card" role="listitem">
+            <div class="mv-card__icon" aria-hidden="true">🔭</div>
+            <h3>Nuestra Visión</h3>
+            <p>Ser el supermercado líder del suroccidente colombiano al 2030, reconocido por la excelencia en calidad, innovación en el servicio y su profundo compromiso con las comunidades locales y el medioambiente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SUCURSALES
+         ============================================= -->
+    <section class="section" id="sucursales" aria-labelledby="branches-title">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__eyebrow">Ubicaciones</span>
+          <h2 class="section__title" id="branches-title">Nuestras sucursales</h2>
+          <p class="section__subtitle">Encuéntranos en tres puntos estratégicos de la ciudad de Pasto, Nariño.</p>
+        </div>
+        <div class="branches__inner">
+          <div class="branches__list" role="list">
+            <article class="branch-card active" role="listitem" tabindex="0" aria-selected="true" id="branch-1" onclick="selectBranch(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.999!2d-77.28!3d1.21!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTInMzYuMCJOIDc3wrAxNic0OC4wIlc!5e0!3m2!1ses!2sco!4v1681234567890')">
+              <div class="branch-card__top">
+                <div class="branch-card__icon" aria-hidden="true">📍</div>
+                <div>
+                  <div class="branch-card__name">Supermercado la Abundancia                 <div class="branch-card__address">Calle 18 #25-40, Centro Histórico</div>
+                </div>
+              </div>
+              <div class="branch-card__details">
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Lun-Dom 7:00-22:00
+                </div>
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.6 1.3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.68 16.92z"/></svg>
+                  (602) 723-4567
+                </div>
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  Parqueadero gratis
+                </div>
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  50 empleados
+                </div>
+              </div>
+            </article>
+            <article class="branch-card" role="listitem" tabindex="0" aria-selected="false" id="branch-2" onclick="selectBranch(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.500!2d-77.30!3d1.22!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTInMzYuMCJOIDc3wrAxNic0OC4wIlc!5e0!3m2!1ses!2sco!4v1681234567891')">
+              <div class="branch-card__top">
+                <div class="branch-card__icon" aria-hidden="true">📍</div>
+                <div>
+                  <div class="branch-card__name">Supermercado la Abundancia>
+                  <div class="branch-card__address">Av. Boyacá #19-85, Jamondino</div>
+                </div>
+              </div>
+              <div class="branch-card__details">
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Lun-Dom 7:30-21:30
+                </div>
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.6 1.3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.68 16.92z"/></svg>
+                  (602) 723-9012
+                </div>
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  Parqueadero amplio
+                </div>
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  35 empleados
+                </div>
+              </div>
+            </article>
+            <article class="branch-card" role="listitem" tabindex="0" aria-selected="false" id="branch-3" onclick="selectBranch(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.300!2d-77.26!3d1.20!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTInMzYuMCJOIDc3wrAxNic0OC4wIlc!5e0!3m2!1ses!2sco!4v1681234567892')">
+              <div class="branch-card__top">
+                <div class="branch-card__icon" aria-hidden="true">📍</div>
+                <div>
+                  <div class="branch-card__name">Supermercado la Abundancia
+                  <div class="branch-card__address">Carrera 44 #16-22, Torobajo</div>
+                </div>
+              </div>
+              <div class="branch-card__details">
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Lun-Sáb 8:00-21:00
+                </div>
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.6 1.3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.68 16.92z"/></svg>
+                  (602) 723-3456
+                </div>
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  Zona de descarga
+                </div>
+                <div class="branch-card__detail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  28 empleados
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="map-embed" id="map-container">
+            <div class="map-placeholder" id="map-placeholder">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <p>Selecciona una sucursal para ver su ubicación</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CONTACTO
+         ============================================= -->
+    <section class="section section--gray" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__eyebrow">Contáctanos</span>
+          <h2 class="section__title" id="contact-title">¿Cómo podemos ayudarte?</h2>
+          <p class="section__subtitle">Escríbenos, llámanos o visítanos. Estamos aquí para atenderte.</p>
+        </div>
+        <div class="contact__inner">
+          <div class="contact__info">
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3>Sede principal</h3>
+                <p>Calle 18 #25-40, Centro Histórico<br>Pasto, Nariño, Colombia</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.6 1.3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.68 16.92z"/></svg>
+              </div>
+              <div>
+                <h3>Teléfonos</h3>
+                <p><a href="tel:+576027234567">(602) 723-4567</a> · Sede Centro<br>
+                   <a href="tel:+573001234567">300 123 4567</a> · WhatsApp</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h3>Correo electrónico</h3>
+                <p><a href="mailto:info@LaAbundancia.co">info@LaAbundancia.co</a><br><a href="mailto:proveedores@LaAbundancia.co">proveedores@LaAbundancia.co</a></p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h3>Horario de atención</h3>
+                <p>Lunes a Domingo<br>7:00 a.m. – 10:00 p.m.</p>
+              </div>
+            </div>
+            <div class="contact__social">
+              <h3>Síguenos en redes</h3>
+              <div class="social-links" role="list">
+                <a class="social-link" href="https://www.facebook.com/LaAbundancia" target="_blank" rel="noopener" role="listitem" aria-label="Visitar Facebook de LaAbundancia">📘</a>
+                <a class="social-link" href="https://www.instagram.com/LaAbundancia" target="_blank" rel="noopener" role="listitem" aria-label="Visitar Instagram de LaAbundancia">📸</a>
+                <a class="social-link" href="https://www.tiktok.com/@LaAbundancia" target="_blank" rel="noopener" role="listitem" aria-label="Visitar TikTok de LaAbundancia">🎵</a>
+                <a class="social-link" href="https://wa.me/573001234567" target="_blank" rel="noopener" role="listitem" aria-label="Contactar por WhatsApp">💬</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario de contacto -->
+          <div class="contact-form" role="region" aria-label="Formulario de contacto">
+            <div id="form-container">
+              <h3 style="font-family:var(--font-display);font-size:22px;font-weight:600;margin-bottom:24px;color:var(--c-dark);">Envíanos un mensaje</h3>
+              <form id="contact-form" novalidate aria-label="Formulario de contacto">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="nombre">Nombre completo *</label>
+                    <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" aria-required="true" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="telefono">Teléfono</label>
+                    <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="300 000 0000" autocomplete="tel" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Correo electrónico *</label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required autocomplete="email" aria-required="true" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="asunto">Asunto</label>
+                  <select class="form-select form-input" id="asunto" name="asunto" aria-label="Seleccionar asunto">
+                    <option value="">Selecciona un tema…</option>
+                    <option>Información de productos</option>
+                    <option>Promociones y ofertas</option>
+                    <option>Proveedores</option>
+                    <option>Quejas y sugerencias</option>
+                    <option>Empleo</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="mensaje">Mensaje *</label>
+                  <textarea class="form-textarea" id="mensaje" name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte…" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="form-submit" aria-label="Enviar formulario de contacto">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+                  Enviar mensaje
+                </button>
+                <p class="form-note">* Campos obligatorios · Tu información está segura con nosotros</p>
+              </form>
+            </div>
+            <div class="form-success" id="form-success" role="status" aria-live="polite">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">¡Mensaje enviado!</h3>
+              <p style="color:var(--c-text-2);">Te contactaremos pronto. También puedes escribirnos directamente por WhatsApp.</p>
+              <div style="margin-top:20px;">
+                <a class="btn btn--primary btn--sm" href="https://wa.me/573001234567" target="_blank" rel="noopener">💬 Ir a WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CTA BAND
+         ============================================= -->
+    <div class="cta-band" role="complementary" aria-label="Llamada a la acción">
+      <div class="container" style="position:relative;z-index:1;">
+        <h2 class="cta-band__title">¿Listo para comprar fresco?</h2>
+        <p class="cta-band__sub">Visítanos hoy en cualquiera de nuestras 3 sucursales en Pasto<br>o escríbenos por WhatsApp para más información.</p>
+        <div class="cta-band__actions">
+          <a class="btn btn--accent" href="#sucursales">Ver sucursales</a>
+          <a class="btn btn--ghost" href="https://wa.me/573001234567?text=Hola%2C%20quiero%20saber%20más%20de%20LaAbundancia" target="_blank" rel="noopener">
+            💬 Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand-logo">
+            <div class="footer__brand-logo-icon" aria-hidden="true">🛒</div>
+            LaAbundancia
+          </div>
+          <p class="footer__brand-desc">Tu supermercado de confianza en Pasto, Nariño. Calidad, frescura y los mejores precios desde 2005.</p>
+          <div class="footer__social-row" role="list">
+            <a class="footer__social-btn" href="https://www.facebook.com/LaAbundancia" target="_blank" rel="noopener" role="listitem" aria-label="Facebook">📘</a>
+            <a class="footer__social-btn" href="https://www.instagram.com/LaAbundancia" target="_blank" rel="noopener" role="listitem" aria-label="Instagram">📸</a>
+            <a class="footer__social-btn" href="https://www.tiktok.com/@LaAbundancia" target="_blank" rel="noopener" role="listitem" aria-label="TikTok">🎵</a>
+            <a class="footer__social-btn" href="https://wa.me/573001234567" target="_blank" rel="noopener" role="listitem" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Navegar</div>
+          <ul class="footer__links" role="list">
+            <li><a class="footer__link" href="#inicio">Inicio</a></li>
+            <li><a class="footer__link" href="#productos">Catálogo</a></li>
+            <li><a class="footer__link" href="#promociones">Promociones</a></li>
+            <li><a class="footer__link" href="#nosotros">Nosotros</a></li>
+            <li><a class="footer__link" href="#sucursales">Sucursales</a></li>
+            <li><a class="footer__link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Empresa</div>
+          <ul class="footer__links" role="list">
+            <li><a class="footer__link" href="#nosotros">Nuestra historia</a></li>
+            <li><a class="footer__link" href="#nosotros">Misión y visión</a></li>
+            <li><a class="footer__link" href="mailto:proveedores@LaAbundancia.co">Proveedores</a></li>
+            <li><a class="footer__link" href="mailto:info@LaAbundancia.co">Trabaja con nosotros</a></li>
+            <li><a class="footer__link" href="#contacto">Quejas y sugerencias</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Contacto</div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Calle 18 #25-40, Centro<br>Pasto, Nariño</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.6 1.3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.68 16.92z"/></svg>
+            <span>(602) 723-4567<br>300 123 4567</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>info@LaAbundancia.co</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Lun–Dom · 7:00–22:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+        <p class="footer__copy">© 2025 LaAbundancia. Todos los derechos reservados.</p>
+        <nav aria-label="Pie de página">
+          <ul class="footer__bottom-links" role="list">
+            <li><a class="footer__bottom-link" href="#">Política de privacidad</a></li>
+            <li><a class="footer__bottom-link" href="#">Términos de uso</a></li>
+            <li><a class="footer__bottom-link" href="#">Accesibilidad</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <div class="wa-float" aria-label="Contacto rápido por WhatsApp">
+    <div class="wa-float__bubble" aria-hidden="true">¡Escríbenos! 👋</div>
+    <a class="wa-float__btn" href="https://wa.me/573001234567?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20más%20información" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Volver arriba" title="Volver al inicio">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- =============================================
+       JAVASCRIPT
+       ============================================= -->
+  <script>
+    /* ---------- PRODUCTOS DATA ---------- */
+    const products = [
+      /*{ id:1, name:'Fresas Frescas 500g', cat:'frutas', price:'$4.900', oldPrice:'$6.200', img:'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400&auto=format&fit=crop&q=80', alt:'Fresas rojas frescas', badge:'Oferta', discount:'-21%' },
+      { id:2, name:'Banano Premium kg', cat:'frutas', price:'$2.800', img:'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&auto=format&fit=crop&q=80', alt:'Bananos maduros' },
+      { id:3, name:'Manzana Roja Premium kg', cat:'frutas', price:'$5.500', img:'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400&auto=format&fit=crop&q=80', alt:'Manzanas rojas' },
+      { id:4, name:'Aguacate Hass unidad', cat:'frutas', price:'$3.200', badge:'Nuevo', img:'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=400&auto=format&fit=crop&q=80', alt:'Aguacates hass maduros' },
+      { id:5, name:'Brócoli fresco 500g', cat:'verduras', price:'$3.500', img:'https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=400&auto=format&fit=crop&q=80', alt:'Brócoli fresco' },
+      { id:6, name:'Tomate Chonto kg', cat:'verduras', price:'$2.900', img:'https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?w=400&auto=format&fit=crop&q=80', alt:'Tomates frescos' },
+      { id:7, name:'Zanahoria bolsa 1kg', cat:'verduras', price:'$2.200', oldPrice:'$3.000', img:'https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=400&auto=format&fit=crop&q=80', alt:'Zanahorias frescas', badge:'Oferta', discount:'-27%' },
+      { id:8, name:'Papa Pastusa kg', cat:'verduras', price:'$1.800', img:'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&auto=format&fit=crop&q=80', alt:'Papas pastusas' },
+      */{ id:9, name:'Pechuga de Pollo kg', cat:'carnes', price:'$13.900', img:'https://images.unsplash.com/photo-1604503468506-a8da13d11d52?w=400&auto=format&fit=crop&q=80', alt:'Pechuga de pollo fresca' },
+      { id:10, name:'Carne Molida Res 500g', cat:'carnes', price:'$12.500', badge:'Fresh', img:'https://images.unsplash.com/photo-1588347785102-2944b7e1d7f3?w=400&auto=format&fit=crop&q=80', alt:'Carne molida de res fresca' },
+      /*{ id:11, name:'Leche Entera Alquería 1L', cat:'lacteos', price:'$3.850', img:'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&auto=format&fit=crop&q=80', alt:'Botella de leche' },
+      */
+      { id:12, name:'Yogur Alpina 900g', cat:'lacteos', price:'$7.200', oldPrice:'$9.500', img:'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&auto=format&fit=crop&q=80', alt:'Yogur natural', badge:'Promo', discount:'-24%' },
+      { id:13, name:'Arroz Diana 2kg', cat:'abarrotes', price:'$8.900', img:'https://images.unsplash.com/photo-1536304993881-ff86e76a1c6b?w=400&auto=format&fit=crop&q=80', alt:'Bolsa de arroz' },
+      { id:14, name:'Aceite Oliva 750ml', cat:'abarrotes', price:'$22.500', img:'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&auto=format&fit=crop&q=80', alt:'Botella de aceite de oliva' },
+      { id:15, name:'Coca-Cola 1.5L', cat:'bebidas', price:'$4.700', img:'https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&auto=format&fit=crop&q=80', alt:'Botella de Coca-Cola' },
+      { id:16, name:'Jabón Líquido Axion 1L', cat:'aseo', price:'$8.500', oldPrice:'$11.000', img:'https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=400&auto=format&fit=crop&q=80', alt:'Jabón para lavar loza', badge:'2×1', discount:'-23%' },
+      { id:17, name:'Croissant Artesanal', cat:'panaderia', price:'$3.500', badge:'Hoy', img:'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&auto=format&fit=crop&q=80', alt:'Croissant recién horneado' },
+      { id:18, name:'Pan Integral 450g', cat:'panaderia', price:'$5.800', img:'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&auto=format&fit=crop&q=80', alt:'Pan integral artesanal' },
+    ];
+
+    /* ---------- RENDER PRODUCTS ---------- */
+    function renderProducts(filter = 'todos') {
+      const grid = document.getElementById('products-grid');
+      const noResults = document.getElementById('no-results');
+      const filtered = filter === 'todos' ? products : products.filter(p => p.cat === filter);
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        noResults.style.display = 'block';
+        return;
+      }
+      noResults.style.display = 'none';
+      grid.innerHTML = filtered.map(p => `
+        <article class="product-card" role="listitem" aria-label="${p.name}">
+          <div class="product-card__img-wrap">
+            ${p.badge ? `<div class="product-card__badge"><span class="badge badge--${p.badge === 'Oferta' || p.badge === 'Promo' ? 'red' : p.badge === 'Nuevo' ? 'accent' : 'green'}">${p.badge}</span></div>` : ''}
+            <img class="product-card__img" src="${p.img}" alt="${p.alt}" width="400" height="400" loading="lazy" />
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__cat">${p.cat}</div>
+            <div class="product-card__name">${p.name}</div>
+            <div class="product-card__pricing">
+              <span class="product-card__price">${p.price}</span>
+              ${p.oldPrice ? `<span class="product-card__old-price">${p.oldPrice}</span>` : ''}
+              ${p.discount ? `<span class="product-card__discount">${p.discount}</span>` : ''}
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <a class="product-card__cta" href="https://wa.me/573001234567?text=Hola%2C%20me%20interesa%20el%20producto%3A%20${encodeURIComponent(p.name)}" target="_blank" rel="noopener" aria-label="Consultar por ${p.name} vía WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Consultar
+            </a>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    /* ---------- CATEGORY FILTER ---------- */
+    document.querySelectorAll('.cat-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.cat-chip').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+        renderProducts(btn.dataset.cat);
+      });
+    });
+
+    /* ---------- MOBILE MENU ---------- */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let menuOpen = false;
+    function toggleMobileMenu() {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('open', menuOpen);
+      mobileMenu.setAttribute('aria-hidden', !menuOpen);
+      hamburger.setAttribute('aria-expanded', menuOpen);
+      document.body.style.overflow = menuOpen ? 'hidden' : '';
+    }
+    function closeMobileMenu() {
+      menuOpen = false;
+      mobileMenu.classList.remove('open');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    hamburger.addEventListener('click', toggleMobileMenu);
+
+    /* ---------- HEADER SCROLL ---------- */
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    /* ---------- SCROLL TO TOP ---------- */
+    const scrollTopBtn = document.getElementById('scroll-top');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+    /* ---------- BRANCH MAP ---------- */
+    function selectBranch(el, mapUrl) {
+      document.querySelectorAll('.branch-card').forEach(c => { c.classList.remove('active'); c.setAttribute('aria-selected', 'false'); });
+      el.classList.add('active');
+      el.setAttribute('aria-selected', 'true');
+      const container = document.getElementById('map-container');
+      container.innerHTML = `<iframe
+        src="${mapUrl}"
+        title="Mapa de ubicación de la sucursal ${el.querySelector('.branch-card__name').textContent}"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-label="Mapa de la sucursal">
+      </iframe>`;
+    }
+
+    /* ---------- CONTACT FORM ---------- */
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+      if (!nombre || !email || !mensaje) {
+        showToast('Por favor completa los campos obligatorios.', false);
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showToast('Por favor ingresa un correo válido.', false);
+        return;
+      }
+      document.getElementById('form-container').style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    });
+
+    /* ---------- TOAST ---------- */
+    function showToast(msg, success = true) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.className = `toast${success ? ' toast--success' : ''} show`;
+      setTimeout(() => { toast.classList.remove('show'); }, 3400);
+    }
+
+    /* ---------- ACTIVE NAV LINK ---------- */
+    const sections = document.querySelectorAll('section[id], div[id="promociones"]');
+    const navLinks = document.querySelectorAll('.nav__link');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => { l.classList.toggle('active', l.getAttribute('href') === '#' + entry.target.id); });
+        }
+      });
+    }, { threshold: 0.35 });
+    sections.forEach(s => observer.observe(s));
+
+    /* ---------- INIT ---------- */
+    renderProducts();
+  </script>
+</body>
+</html>
